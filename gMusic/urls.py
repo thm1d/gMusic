@@ -20,6 +20,7 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
+    path('spotify/', include('spotify.urls')),
     path('', include('frontend.urls')),
     path('favicon.ico',RedirectView.as_view(url='/static/images/favicon.ico')),
 ]
